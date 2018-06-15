@@ -5,15 +5,15 @@ import Main from './Main';
 
 function mapStateToProps(state) {
   return {
-    posts: state.props,
+    posts: state.posts,
     comments: state.comments
   }
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispachToProps(dispatch) {
   return bindActionCreators(actionCreators, dispatch);
 }
 
-const App = connect(mapStateToProps, mapDispatchToProps)(Main);
+const App = connect(mapStateToProps, mapDispachToProps)(Main);
 
 export default App;
